@@ -15,6 +15,7 @@ GEM
     afmotion (2.6)
       motion-cocoapods (>= 1.4.1)
       motion-require (>= 0.1)
+    awesome_print (1.7.0)
     builder (3.2.2)
     cdq (1.0.8)
       motion-yaml (= 1.4)
@@ -98,7 +99,9 @@ PLATFORMS
 
 DEPENDENCIES
   afmotion
+  awesome_print
   cdq
+  minitest
   motion-cocoapods
   motion-yaml (= 1.4)
   newclear

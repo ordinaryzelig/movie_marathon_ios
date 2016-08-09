@@ -73,3 +73,9 @@ end
 
 # Remove this if you aren't using CDQ
 task :"build:simulator" => :"schema:build"
+
+require 'rake/testtask'
+Rake::TestTask.new(:test) do |t|
+  t.pattern = 'spec/**/*spec.rb'
+  t.warning = false
+end

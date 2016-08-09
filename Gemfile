@@ -22,3 +22,8 @@ gem "newclear" # Completely wipe out the simulator and rebuild
 # gem 'motion-blitz' # Easy HUD with SVProgressHUD
 # gem "motion-juxtapose", "~> 0.1" # Screenshot acceptance comparison tool
 # gem "bubble-wrap"
+
+group :test do
+  gem 'minitest'
+  gem 'awesome_print'
+end
