@@ -25,5 +25,12 @@ gem "newclear" # Completely wipe out the simulator and rebuild
 
 group :test do
   gem 'minitest'
+end
+
+group :cli do
+  gem 'fandango', :path => '../fandango'
+end
+
+group :cli, :test do
   gem 'awesome_print'
 end

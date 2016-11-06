@@ -7,4 +7,10 @@ class Theater
   attr_accessor :showtimes_link
   attr_accessor :movies
 
+  def initialize(atts = {})
+    atts.each do |att, val|
+      send("#{att}=", val)
+    end
+  end
+
 end

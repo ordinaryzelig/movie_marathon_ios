@@ -15,6 +15,12 @@ class Showtime
   attr_accessor :movie
   attr_accessor :datetime
 
+  def initialize(atts = {})
+    atts.each do |att, val|
+      send("#{att}=", val)
+    end
+  end
+
   def feature_start_time
     @datetime + PREVIEW_MINUTES.to_f / 24 / 60
   end
